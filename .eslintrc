@@ -1,0 +1,18 @@
+{
+  "plugins": ["prettier","jest"],
+  "extends": ["eslint:recommended","prettier"],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "env": {
+    "node": true
+  },
+  "rules": {
+    "prefer-const": ["error", {
+      "destructuring": "any",
+      "ignoreReadBeforeAssign": false
+  }]
+  }
+
+}
